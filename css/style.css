@@ -115,7 +115,7 @@ footer {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(../IMG/topbg.png);
+    background-image: url(../img/topbg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -261,4 +261,27 @@ footer {
     justify-content: center;
 }
 
-.localizacoes-inicio {}
+.botao-localizacoes {
+    width: 270px;
+}
+
+.localizacoes-inicio-container {
+    display: flex;
+    align-items: center;
+}
+
+.localizacoes-inicio-texto {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.localizacao-inicio-imagem {
+    border-radius: 5px;
+}
+
+.localizacoes-inicio-esq {
+    width: 80%;
+    margin-right: 70px;
+}
