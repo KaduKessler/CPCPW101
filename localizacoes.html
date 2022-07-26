@@ -11,34 +11,94 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c68e1af131.js" crossorigin="anonymous"></script>
-  <title>KOFFEE - Localizações</title>
+  <script>
+    function hmenu() {
+      var x = document.getElementById("navlist");
+      var y = document.getElementById("navitem");
+      if (x.className === "navlist") {
+        x.className += " active";
+      } else {
+        x.className = "navlist";
+      }
+    }
+  </script>
+  <title>KOFFEE - Sobre</title>
 </head>
 
 <body>
   <header>
-    <a href="inicial" class="logo">KOFFEE</a>
-    <div class="navigation">
-      <ul class="navlist">
-        <li><a href="sobre" class="navitem">SOBRE</a></li>
-        <li><a href="localizacoes" class="navitem">LOCALIZAÇÕES</a></li>
-        <li><a href="menu" class="navitem">MENU</a></li>
-        <li><a href="contato" class="navitem">CONTATO</a></li>
-      </ul>
-    </div>
+    <nav>
+      <a href="inicial.html" class="logo">KOFFEE</a>
+    </nav>
+    <a href="javascript:void(0);" class="mobilemenu" onclick="hmenu()"><i class="fa-solid fa-bars"></i></a>
+    <ul class="navlist" id="navlist">
+      <li><a href="sobre.html" class="navitem" id="navitem">SOBRE</a></li>
+      <li><a href="#" class="navitem" id="navitem">LOCALIZAÇÕES</a></li>
+      <li><a href="menu.html" class="navitem" id="navitem">MENU</a></li>
+      <li><a href="contato.html" class="navitem" id="navitem">CONTATO</a></li>
+    </ul>
   </header>
+
+  <section class="pagina">
+    <section class="space3">
+      <h1 class="h1-section">VENHA TOMAR UM CAFÉ</h1>
+      <section class="localizacoes">
+        <div class="cardloc">
+          <div class="cardimagem">
+            <img src="img/loc1.jpg" alt="">
+          </div>
+          <div class="cardinfo">
+            <h2 class="h2-section">KOFFEE SANTA MARIA</h2>
+            <div class="cardinfolados">
+              <div class="cardinfoe">
+                <p>Seg - Sex</p>
+                <p>09:00 AM - 19:00 PM</p>
+              </div>
+              <div class="cardinfod">
+                <p>Av. Roraima, 1000
+                  Camobi, Santa Maria</p>
+              </div>
+            </div>
+            <a href="https://g.page/ufsm_oficial" class="botao botao-maps" target="_blank">Maps</a>
+          </div>
+        </div>
+
+        <div class="cardloc">
+          <div class="cardimagem">
+            <img src="img/loc2.jpg" alt="">
+          </div>
+          <div class="cardinfo">
+            <h2 class="h2-section">KOFFEE SÃO SEPÉ</h2>
+            <div class="cardinfolados">
+              <div class="cardinfoe">
+                <p>Seg - Sex</p>
+                <p>09:00 AM - 19:00 PM</p>
+              </div>
+              <div class="cardinfod">
+                <p>Av. Roraima, 1000
+                  Camobi, Santa Maria</p>
+              </div>
+            </div>
+            <a href="https://goo.gl/maps/Wi292TyP9u1YB5Ak8" class="botao botao-maps" target="_blank">Maps</a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
 
   <footer>
     <div class="rodape">
-      <div class="rodape-email">
+      <div class="rodape-item">
         <h1 class="rodape-toptext">E-MAIL</h1>
         <a href="mailto:saq@koffee.com" class="rodape-subtext">saq@koffee.com</a>
       </div>
-      <div class="rodape-meio">
+      <div class="rodape-item">
         <h1 class="rodape-toptext">DESIGNED AND DEVELOPED BY</h1>
-        <a href="https://github.com/KaduKessler" class="rodape-subtext" target="_blank">CARLOS EDUARDO BITENCOURT
-          KESSLER</a>
+        <a href="https://github.com/KaduKessler" class="rodape-subtext" target="_blank">
+          CARLOS EDUARDO BITENCOURT KESSLER
+        </a>
       </div>
-      <div class="rodape-social">
+      <div class="rodape-item">
         <h1 class="rodape-toptext">SOCIAL</h1>
         <a href="https://instagram.com" class="rodape-subtext" target="_blank"><i
             class="fa-brands fa-instagram"></i></a>

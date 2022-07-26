@@ -11,20 +11,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c68e1af131.js" crossorigin="anonymous"></script>
+  <script>
+    function hmenu() {
+      var x = document.getElementById("navlist");
+      var y = document.getElementById("navitem");
+      if (x.className === "navlist") {
+        x.className += " active";
+      } else {
+        x.className = "navlist";
+      }
+    }
+  </script>
   <title>KOFFEE - Sobre</title>
 </head>
 
 <body>
   <header>
-    <a href="inicial" class="logo">KOFFEE</a>
-    <div class="navigation">
-      <ul class="navlist">
-        <li><a href="sobre" class="navitem">SOBRE</a></li>
-        <li><a href="localizacoes" class="navitem">LOCALIZAÇÕES</a></li>
-        <li><a href="menu" class="navitem">MENU</a></li>
-        <li><a href="contato" class="navitem">CONTATO</a></li>
-      </ul>
-    </div>
+    <nav>
+      <a href="inicial.html" class="logo">KOFFEE</a>
+      </div>
+    </nav>
+    <a href="javascript:void(0);" class="mobilemenu" onclick="hmenu()"><i class="fa-solid fa-bars"></i></a>
+    <ul class="navlist" id="navlist">
+      <li><a href="#" class="navitem" id="navitem">SOBRE</a></li>
+      <li><a href="localizacoes.html" class="navitem" id="navitem">LOCALIZAÇÕES</a></li>
+      <li><a href="menu.html" class="navitem" id="navitem">MENU</a></li>
+      <li><a href="contato.html" class="navitem" id="navitem">CONTATO</a></li>
+    </ul>
   </header>
 
   <section class="pagina">
@@ -38,11 +51,15 @@
             Começou com uma pequena propriedade alugada em Santa Maria e em 2022
             KOFFEE já tinha sua 2 filial em São Sepé.</p>
         </div>
-        <img src="img/s1.png" alt="">
+        <div class="caixaProdImagem">
+          <img src="img/s1.png" alt="" class="historia-imagem">
+        </div>
       </div>
 
       <div class="gratidao">
-        <img src="img/s2.png" alt="" class="gratidao-img">
+        <div class="caixaProdImagem">
+          <img src="img/s2.png" alt="" class="gratidao-img">
+        </div>
         <div class="gratidao-texto">
           <h1 class="h2-section">GRATIDÃO</h1>
           <p class="p1">Somos gratos por ter muitas oportunidades para atendê-lo. Alguns atos são
@@ -50,8 +67,8 @@
             cuidadosamente seu pedido ou consertando seu moedor quebrado antes da
             corrida do fim de semana, daremos 100% a você sempre. Se você tem a
             mesma paixão pelo serviço, venha trabalhar conosco.</p>
-        </div>
-
+            <a href="contato.html" class="botao botao-contato">ENTRE EM CONTATO</a>
+          </div>
       </div>
 
     </section>
@@ -59,16 +76,16 @@
 
   <footer>
     <div class="rodape">
-      <div class="rodape-email">
+      <div class="rodape-item">
         <h1 class="rodape-toptext">E-MAIL</h1>
         <a href="mailto:saq@koffee.com" class="rodape-subtext">saq@koffee.com</a>
       </div>
-      <div class="rodape-meio">
+      <div class="rodape-item">
         <h1 class="rodape-toptext">DESIGNED AND DEVELOPED BY</h1>
         <a href="https://github.com/KaduKessler" class="rodape-subtext" target="_blank">CARLOS EDUARDO BITENCOURT
           KESSLER</a>
       </div>
-      <div class="rodape-social">
+      <div class="rodape-item">
         <h1 class="rodape-toptext">SOCIAL</h1>
         <a href="https://instagram.com" class="rodape-subtext" target="_blank"><i
             class="fa-brands fa-instagram"></i></a>

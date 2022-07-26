@@ -11,20 +11,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c68e1af131.js" crossorigin="anonymous"></script>
+  <script>
+    function hmenu() {
+      var x = document.getElementById("navlist");
+      var y = document.getElementById("navitem");
+      if (x.className === "navlist") {
+        x.className += " active";
+      } else {
+        x.className = "navlist";
+      }
+    }
+  </script>
   <title>KOFFEE - Café deve ser algo especial</title>
 </head>
 
 <body>
   <header>
-    <a href="inicial" class="logo">KOFFEE</a>
-    <div class="navigation">
-      <ul class="navlist">
-        <li><a href="sobre" class="navitem">SOBRE</a></li>
-        <li><a href="localizacoes" class="navitem">LOCALIZAÇÕES</a></li>
-        <li><a href="menu" class="navitem">MENU</a></li>
-        <li><a href="contato" class="navitem">CONTATO</a></li>
-      </ul>
-    </div>
+    <nav>
+      <a href="#" class="logo">KOFFEE</a>
+      </div>
+    </nav>
+    <a href="javascript:void(0);" class="mobilemenu" onclick="hmenu()"><i class="fa-solid fa-bars"></i></a>
+    <ul class="navlist" id="navlist">
+      <li><a href="sobre.html" class="navitem" id="navitem">SOBRE</a></li>
+      <li><a href="localizacoes.html" class="navitem" id="navitem">LOCALIZAÇÕES</a></li>
+      <li><a href="menu.html" class="navitem" id="navitem">MENU</a></li>
+      <li><a href="contato.html" class="navitem" id="navitem">CONTATO</a></li>
+    </ul>
   </header>
 
   <div class="topbg">
@@ -34,13 +47,10 @@
     </div>
   </div>
 
-  <section class="pagina">
+  <section class="pagina inicial">
     <section class="historia-inicio space1">
       <div class="historia-inicio-esq">
-        <p class="p1">Fundada em Novembro de 2020 por um jovem de Santa Maria, KOFFEE veio
-          de uma ideia sobre o momento em que tomamos nosso café deve ser especial.
-          Começou com uma pequena propriedade alugada em Santa Maria e em 2022
-          KOFFEE já tinha sua 2 filial em São Sepé.</p>
+        <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error atque iure ipsum, illo repellendus assumenda molestiae incidunt iusto deserunt debitis aliquid accusamus, aperiam, exercitationem rem delectus voluptatem id eius facilis?</p>
         <a href="sobre" class="botao botao-historia">HISTÓRIA COMPLETA</a>
       </div>
       <div class="historia-inicio-dir">
@@ -48,49 +58,53 @@
       </div>
     </section>
 
-    <section class="menu-inicio space1">
+    <section class="produto space1">
       <h1 class="h1-section">PRODUTOS</h1>
-      <div class="menu-produtos">
-        <div class="produto">
-          <img src="img/menu/c2.png" alt="Café" class="produto-imagem">
-          <div class="produto-centro">
-            <div class="produto-texto">Capuccino feito utilizando leite integral, avelã, café e raspas de chocolate ou
-              cacau em pó.</div>
+      <div class="containerProd">
+        <div class="caixaProd">
+          <div class="caixaProdImagem">
+            <img src="img/menu/1.jpg" alt="">
           </div>
-          <p class="produto-nome">Capuccino Avelã</p>
+          <div class="conteudoProd">
+            <h3>Café de Avelã</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus veniam illum eveniet officiis quibusdam,
+              a corporis ad quo nostrum suscipit voluptatem, doloribus et? Error, recusandae! Dolorum ipsum ipsa culpa
+              ullam!</p>
+          </div>
         </div>
 
-        <div class="produto">
-          <img src="img/menu/c1.png" alt="Café" class="produto-imagem">
-          <div class="produto-centro">
-            <div class="produto-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos
-              quis rerum aliquam</div>
+        <div class="caixaProd">
+          <div class="caixaProdImagem">
+            <img src="img/menu/2.jpeg" alt="">
           </div>
-          <p class="produto-nome">Coffee Two</p>
+          <div class="conteudoProd">
+            <h3>Café Gourmet</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus veniam illum eveniet officiis quibusdam,
+              a corporis ad quo nostrum suscipit voluptatem, doloribus et? Error, recusandae! Dolorum ipsum ipsa culpa
+              ullam!</p>
+          </div>
         </div>
 
-        <div class="produto">
-          <img src="img/menu/c3.png" alt="Café" class="produto-imagem">
-          <div class="produto-centro">
-            <div class="produto-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi numquam beatae
-              dignissimos</div>
+        <div class="caixaProd">
+          <div class="caixaProdImagem">
+            <img src="img/menu/3.jpg" alt="">
           </div>
-          <p class="produto-nome">Coffee Three</p>
+          <div class="conteudoProd">
+            <h3>Café Irlandês</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus veniam illum eveniet officiis quibusdam,
+              a corporis ad quo nostrum suscipit voluptatem, doloribus et? Error, recusandae! Dolorum ipsum ipsa culpa
+              ullam!</p>
+          </div>
         </div>
-
       </div>
-      <div class="botao-produto">
-        <a href="menu" class="botao">MENU COMPLETO</a>
-      </div>
+      <a href="sobre" class="botao botao-produto">MENU COMPLETO</a>
     </section>
 
     <section class="localizacoes-inicio space1">
       <h1 class="h1-section">LOCALIZAÇÕES</h1>
       <div class="localizacoes-inicio-container">
         <div class="localizacoes-inicio-esq">
-          <p class="p1">KOFFEE conta com 2 estabelecimentos, um localizado em Santa Maria e o
-            outro
-            localizado em São Sepé.</p>
+          <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos tempora temporibus cupiditate reprehenderit natus amet eum fugiat corporis alias enim nulla magni aut, maxime, et voluptates, numquam ullam provident! Tempore.</p>
           <a href="localizacoes" class="botao botao-localizacoes">LOCALIZAÇÃO COMPLETA</a>
         </div>
         <div class="localizacao-inicio-dir">
@@ -100,20 +114,18 @@
     </section>
   </section>
 
-  </section>
-
   <footer>
     <div class="rodape">
-      <div class="rodape-email">
+      <div class="rodape-item">
         <h1 class="rodape-toptext">E-MAIL</h1>
         <a href="mailto:saq@koffee.com" class="rodape-subtext">saq@koffee.com</a>
       </div>
-      <div class="rodape-meio">
+      <div class="rodape-item">
         <h1 class="rodape-toptext">DESIGNED AND DEVELOPED BY</h1>
         <a href="https://github.com/KaduKessler" class="rodape-subtext" target="_blank">CARLOS EDUARDO BITENCOURT
           KESSLER</a>
       </div>
-      <div class="rodape-social">
+      <div class="rodape-item">
         <h1 class="rodape-toptext">SOCIAL</h1>
         <a href="https://instagram.com" class="rodape-subtext" target="_blank"><i
             class="fa-brands fa-instagram"></i></a>

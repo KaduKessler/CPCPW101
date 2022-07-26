@@ -1,7 +1,7 @@
 # CPCPW101 - Construção de Páginas Web
 Repositório para o projeto final da disciplina de Construção de Páginas Web do curso [Técnico em Informática](https://www.ufsm.br/cursos/tecnico/santa-maria/informatica/) do [Colégio Politécnico da UFSM](https://www.ufsm.br/unidades-universitarias/politecnico/).
 
-Desenvolvi levando em conta o tema de uma cafeteria, foi utilizado apenas HTML & CSS no projeto.
+Desenvolvi levando em conta o tema de uma cafeteria, foi utilizado HTML & CSS no projeto, JS utilizando somente para o menu mobile.
 
 ## Documentação de cores
 
