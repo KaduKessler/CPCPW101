@@ -7,9 +7,9 @@ Desenvolvi levando em conta o tema de uma cafeteria, foi utilizado HTML & CSS no
 
 | Cor                                                      | Hexadecimal |
 | -------------------------------------------------------- | ----------  |
-| ![#151515](http://via.placeholder.com/30/151515?text=+) | #151515     |
-| ![#202020](http://via.placeholder.com/30/202020?text=+) | #202020     |
-| ![#F5F5F5](http://via.placeholder.com/30/F5F5F5?text=+) | #F5F5F5     |
+| ![#151515](https://via.placeholder.com/30/151515?text=+) | #151515     |
+| ![#202020](https://via.placeholder.com/30/202020?text=+) | #202020     |
+| ![#F5F5F5](https://via.placeholder.com/30/F5F5F5?text=+) | #F5F5F5     |
 
 
 ## Referências
